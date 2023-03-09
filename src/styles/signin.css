@@ -1,0 +1,92 @@
+:root {
+    --background: #0E0F15;
+    --colorFont: #40C5E6;
+    --colorLabel: #878787;
+    --bgInput: rgba(97, 97, 97, 0.2);
+    --bgInputFocus: rgba(97, 97, 97, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signin {
+    background-color: #0E0F15;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin h1 {
+    color: var(--colorFont);
+}
+
+.signin p {
+    color: var(--colorLabel);
+    padding-top: 10px;
+}
+
+.signin .container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.inputs .input {
+    width: 49%;
+    margin: 0;
+}
+
+.input {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 15px 0;
+}
+
+.input input {
+    background-color: var(--bgInput);
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.5s all;
+}
+
+.input input:focus {
+    background-color: var(--bgInputFocus);
+}
+
+.input label {
+    color: var(--colorLabel);
+    padding: 5px 0;
+}
+
+button {
+    background-color: var(--colorFont);
+    width: 100%;
+    padding: 17px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    transition: 0.5s all;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
